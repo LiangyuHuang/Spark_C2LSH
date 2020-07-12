@@ -7,7 +7,7 @@ def c2lsh(data_hashes, query_hashes, alpha_m, beta_n):
     numCandidates = -1
     while numCandidates < beta_n:
         offset += 1
-        candidatesRDD = data_hashes.filter(lambda e: match(e[1], query_hashes, alpha_m, offset)).map(lambda e: e[0])
+        candidatesRDD = data_hashes.flatMap(lambda e: [e[0]] if match(e[1], query_hashes, alpha_m, offset) else [])
         numCandidates = candidatesRDD.count()
     return candidatesRDD
 
