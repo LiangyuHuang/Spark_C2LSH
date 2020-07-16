@@ -13,14 +13,14 @@ def createSC():
     return sc
 
 
-with open("./toy/toy_hashed_data", "rb") as file:
+with open("./testCases/testCase1.pkl", "rb") as file:
     data = pickle.load(file)
 
-with open("./toy/toy_hashed_query", "rb") as file:
+with open("./testCases/testQueryHash.pkl", "rb") as file:
     query_hashes = pickle.load(file)
 
 alpha_m = 10
-beta_n = 10
+beta_n = 100000
 
 sc = createSC()
 data_hashes = sc.parallelize([(index, x) for index, x in enumerate(data)])
@@ -31,4 +31,4 @@ sc.stop()
 
 print('running time:', end_time - start_time)
 print('Number of candidate: ', len(res))
-print('set of candidate: ', set(res))
+#print('set of candidate: ', set(res))
