@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+caseGenerate.py
+diagram.001.jpeg
+diagram.key
+report.pdf
+testCases/testCase0.pkl
+testCases/testCase1.pkl
+testCases/testCase1result.png
+testCases/testCase2.pkl
+testCases/testCase2result.png
+testCases/testQueryHash.pkl
