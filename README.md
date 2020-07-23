@@ -35,11 +35,22 @@ Function *match*:
 
 Here is the output for 1 million numbers:
 
-![image-20200716232416600](/Users/liangyu/Library/Application Support/typora-user-images/image-20200716232416600.png)
-
-
+Average running time is approximately 4.30s.
 
 ![image-20200716232518044](/Users/liangyu/Library/Application Support/typora-user-images/image-20200716232518044.png)
+
+
+
+![image-20200716232416600](/Users/liangyu/Library/Application Support/typora-user-images/image-20200716232416600.png)
+
+This is the longest time.
+
+## Improve the efficiency
+
+1. Improving *match* function. If the result is False, stop immediately.
+2. Employing *flatmap* in C2LSH function to replace map and filter. (ie. change two action *map filter* to *flatmap* )
+
+
 
 
 
