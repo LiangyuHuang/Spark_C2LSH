@@ -6,11 +6,7 @@
 
 ​	The pseudocode of C2LSH is shown as following.
 
-<img src="/Users/liangyu/Library/Application Support/typora-user-images/image-20200716212211936.png">
-
 ​	And the diagram of this code shows as follwing.
-
-![diagram.001](/Users/liangyu/Documents/GitHub/Spark_C2LSH/diagram.001.jpeg)
 
 Function *c2lsh*(data_hashes, query_hashes, alpha_m, beta_n):
 
@@ -35,15 +31,7 @@ Function *match*:
 
 Here is the output for 1 million numbers:
 
-Average running time is approximately 4.30s.
-
-![image-20200716232518044](/Users/liangyu/Library/Application Support/typora-user-images/image-20200716232518044.png)
-
-
-
-![image-20200716232416600](/Users/liangyu/Library/Application Support/typora-user-images/image-20200716232416600.png)
-
-This is the longest time.
+Average running time is approximately 4.30s
 
 ## Improve the efficiency
 
